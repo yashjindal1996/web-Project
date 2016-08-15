@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="navbar.css">	
+<title>Takshshila</title>
+<link rel="icon" href="my.ico" type="image/x-icon">
+<style>
+body{
+margin:0;
+padding:0;
+}
+.hello{
+margin-top:-20px;
+}
+.login{
+position:absolute;
+top:20%;
+left:30%;
+background-color:white;	
+padding:	20px 70px 70px 70px;
+box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+background:rgba(0,0,0,0.5);
+font-family: Lato, 'helvetica neue', helvetica, sans-serif;
+}
+body{
+background-image:url('login-book.jpg');
+}
+h2{
+text-align:center;
+color:white;
+}
+.signin{
+background-color:#faa605;
+border:none;
+padding:10px;
+width:100%;
+color:white;
+transition: 1s;
+}
+
+#email
+{
+height:35px;
+font-size:16px;
+border:solid 1px #dcdcdc;
+padding-left:10px;
+}
+
+input:focus{
+border-color:black;
+}
+input{
+margin-top:10px;
+border-radius:4px;
+}
+a{
+align:center;
+color:white;
+text-decoration:none;
+}
+a:hover{
+color:#F1E1A8;
+}
+.signin:hover{
+background-color:#db9b25;
+
+}
+#invalid-email{
+text-align: center;	
+color:red;
+display:none;
+font-size:15px;
+}
+</style>
+<script>
+function validate()
+{
+var emai_exp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ var email = document.getElementById("email");
+document.getElementById("invalid-email").style.display = "none";
+if(!emai_exp.test(email.value))
+{
+document.getElementById("invalid-email").style.display = "block";
+email.focus();
+return false;
+}
+
+}
+
+</script>
+</head>
+<body>
+<nav class="navbar navbar-inverse hello">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html"><img src="tak.png"></img></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+       <li ><a href="login-page.html"  class="active" id="home4">Login</a></li>
+	   <li><a href="aboutus.html"  id="home3">About</a></li>
+	   <li><a href="Book-page.html" id="home1">Books</a></li>
+	   <li ><a href="home.html" id="home">Home</a></li>
+	  </ul>
+  </div>
+</nav>
+<form name="myform" onsubmit="return validate()">	
+<div class="login">
+<h2>Change Password</h2>
+<br><br>
+
+<table>
+
+			<td><input type="text" placeholder="Registered E-mail" id="email" name="fpassword"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Submit" class="signin"></td>
+		</tr>
+		<tr>
+		<td  id="invalid-email">Invalid E-mail address.</td>
+		</tr>
+	</table>
+</div>
+		
+</form>
+</div>
+</body>
+</html>

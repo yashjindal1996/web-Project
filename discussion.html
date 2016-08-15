@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Takshshila</title>
+<link rel="icon" href="my.ico" type="image/x-icon">
+ <link rel="stylesheet" type="text/css" href="navbar.css">
+ <link rel="stylesheet" type="text/css" href="footer.css">
+
+<style>
+body{
+padding:0;
+mqrgin:0;}
+.hello{
+margin-top:-20px;
+}
+</style>
+</head>
+<body>
+<?php include("connect.php"); ?>
+<nav class="navbar navbar-inverse hello">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.php"><img src="tak.png"></img></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+       <li class="loginin">
+	   <?php  
+			if(isset($_SESSION['ID']))
+			{
+				echo "<a href='#' id='user'>".$_SESSION['login_user']."&#9662;</a>";
+				echo "<ul class='dropdown'>";
+				echo "<a href ='profile.php' class='logg' >Profile</a></li>";
+				echo "<a href ='signout.php'  class='logg'>Signout</a></li>";
+				echo "</ul>";
+			}
+			else{
+				
+				echo "<a href='login-page-sc.php' id='home4'>Login</a>";
+			}
+	   
+	   ?></a></li>
+	   <li><a href="aboutus.php"  id="home3">About</a></li>
+	   <li><a href="Book-page.php" class="active" id="home1">Books</a></li>
+	   <li ><a href="home.php" id="home">Home</a></li>
+	  </ul>
+  </div>
+</n
+
+</body>
+</html>

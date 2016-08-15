@@ -1,0 +1,24 @@
+.footer{
+background-color:#474747;
+width:100%;
+text-align:center;
+height:auto;
+}
+
+.logos{
+height:40px;
+width:40px;	
+margin-left:3px;
+}
+
+.social-media{
+padding:20px;
+}
+
+.low-foot{
+color:white;
+}
+
+div.footer.social-media li{
+color:white;
+}

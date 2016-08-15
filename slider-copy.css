@@ -1,0 +1,39 @@
+.offer-pg-cont{
+    width: 100%;
+    overflow:hidden;
+    padding:30px;;
+}
+span.arrow-left,span.arrow-right{
+  
+  position: absolute;
+   margin-top: 120px;
+   color:white;
+   z-index: 2;
+   cursor: pointer;
+}
+span.arrow-left{
+    left: 0px;
+}
+span.arrow-right{
+    right: 0px;
+}
+span.arrow-left:hover, span.arrow-right:hover{
+    background-color: white;
+}
+.offer-pg{
+    width: 15000px;
+}
+
+.offer-pg > .portfolio-item{
+    width: 100px;
+    margin-left:24px;
+    float:left;
+}
+.whole{
+	position:absolute;
+	transition:1s;
+	background-color:#faa605;
+	left:0px;
+	top:50px;
+}
+
